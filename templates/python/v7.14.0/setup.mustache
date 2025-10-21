@@ -41,6 +41,7 @@ setup(
     keywords=["pulp", "pulpcore", "client", "{{{appName}}}"],
     install_requires=REQUIRES,
     python_requires=PYTHON_REQUIRES,
+    setup_requires=["setuptools>=70.2.0"],
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     {{#licenseInfo}}license="{{.}}",
